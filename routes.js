@@ -7,9 +7,9 @@ const SEARCH = "/search";
 
 // users
 const USERS = "/users";
-const USER_DETAIL = "/:id";
-const EDIT_PROFILE = "/edit-profile";
 const CHANGE_PASSWORD = "/change-password";
+const EDIT_PROFILE = "/edit-profile";
+const USER_DETAIL = "/:id";
 
 
 // Videos
