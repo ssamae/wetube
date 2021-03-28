@@ -12,6 +12,7 @@ export const search = (req,res)=> {
     const {
         query: { term:searchingBy } 
     } = req;
+    // const searchingBy = req.query.term 위에 거랑 동일하다
     res.render("search", {pageTitle:"Search", searchingBy, videosDb });
 };
 
