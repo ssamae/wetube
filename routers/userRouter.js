@@ -7,6 +7,6 @@ import routes from "../routes";
  userRouter.get(routes.users,users);
  userRouter.get(routes.changePassword, changePassword);
  userRouter.get(routes.editProfile, editProfile);
- userRouter.get(routes.userDetail, userDetail);
+ userRouter.get(routes.userDetail(), userDetail);
 
 export default userRouter;
