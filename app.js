@@ -14,17 +14,18 @@ import globalRouter from "./routers/globalRouter";
 
 const app = express();
 
-//app.use(bodyParser.json());
-//app.use(bodyParser.urlencoded({extended: true}));
 
 
 
 // app.use(helmet())  // 동영상 재생 안되는 문제 때문에 수정
 app.use(helmet({contentSecurityPolicy: false})); 
 
+
 app.set('view engine', "pug");
 app.use(express.json());
 app.use(cookieParser());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan("dev"));
 
 app.use(localMiddleware);
