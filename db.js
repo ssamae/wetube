@@ -4,7 +4,7 @@ export const videosDb = [
         title : 'Video awesome',
         description : 'This is someting I love',
         views:24,
-        videoFile : "https://archive.org/details/BigBuckBunny_124",
+        videoFile : "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         
         creator :
         {
@@ -18,8 +18,8 @@ export const videosDb = [
         id:2342,
         title : 'Video awesome1',
         description : 'This is someting I love',
-        views:24,
-        videoFile : "https://archive.org/details/BigBuckBunny_124",
+        views:34,
+        videoFile : "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         
         creator :
         {
@@ -33,8 +33,8 @@ export const videosDb = [
         id:546456,
         title : 'Video awesome2',
         description : 'This is someting I love',
-        views:24,
-        videoFile : "https://archive.org/details/BigBuckBunny_124",
+        views:22,
+        videoFile : "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         
         creator :
         {
@@ -48,8 +48,8 @@ export const videosDb = [
         id:34535,
         title : 'Video awesome4',
         description : 'This is someting I love',
-        views:24,
-        videoFile : "https://archive.org/details/BigBuckBunny_124",
+        views:33,
+        videoFile : "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         
         creator :
         {
@@ -63,8 +63,8 @@ export const videosDb = [
         id:435345,
         title : 'Video awesome5',
         description : 'This is someting I love',
-        views:24,
-        videoFile : "https://archive.org/details/BigBuckBunny_124",
+        views:21,
+        videoFile : "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         
         creator :
         {
