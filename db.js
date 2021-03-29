@@ -1,6 +1,7 @@
 import mongoose, { Error, Mongoose } from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
+import "./models/Video";
 
 mongoose.connect( process.env.MONGO_URL,
 {
