@@ -21,6 +21,7 @@ export const search = (req,res)=> {
     const {
         query: { term:searchingBy } 
     } = req;
+    
     // const searchingBy = req.query.term 위에 거랑 동일하다
     res.render("search", {pageTitle:"Search", searchingBy, videosDb });
 };
@@ -30,12 +31,20 @@ export const videos = (req,res) => res.render("videos",{pageTitle:"Videos"});
 export const getUpload = (req,res) => {
     res.render("upload",{pageTitle:"Upload"});
 }
-export const postUpload = (req,res) => {
+export const postUpload = async(req,res) => {
     const {
-        body: {file,title,description,} 
-    } = req ;
+        body: {title,description},
+        file: {path}
+    }= req;
+    const newVideo = await Video.create({
+        fileUrl:path,
+        title:title,
+        description:description
+    });
+    console.log(newVideo);
     // To Do : Upload ansd save video
-    res.redirect(routes.videoDetail(324393));
+    
+    res.redirect(routes.videoDetail(newVideo.id));
 };
 
 
