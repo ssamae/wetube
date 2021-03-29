@@ -22,6 +22,7 @@ app.use(helmet({contentSecurityPolicy: false}));
 
 
 app.set('view engine', "pug");
+app.use("/uploads", express.static("uploads"));
 app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.json());

@@ -7,9 +7,7 @@ import "./models/Comment";
 mongoose.connect( process.env.MONGO_URL,
 {
     useNewUrlParser: true,
-    useFindAndModify:false,
-}
-);
+    useFindAndModify:false,});
 
 const db = mongoose.connection;
 

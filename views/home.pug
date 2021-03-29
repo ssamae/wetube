@@ -6,7 +6,7 @@ block content
         each video in videosDb 
             +videoBlock({
                 id:video.id,
+                videoFile:video.fileUrl,
                 title:video.title,
-                views:video.views,
-                videoFile:video.videoFile,
+                views:video.views ,
             })
