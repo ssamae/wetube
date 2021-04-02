@@ -11,11 +11,18 @@ export const home = async (req, res) => {
   }
 };
 
-export const search = (req, res) => {
+export const search = async (req, res) => {
   const {
     query: { term: searchingBy },
   } = req;
-
+  let videosDb = []; // let의 경우 재선언이 가능하다, 그래서 값을 바꾸지 않으려면 const를 사용해야한다.
+  try {
+    videosDb = await Video.find({
+      title: { $regex: searchingBy, $options: "i" },
+    });
+  } catch (error) {
+    console.log(error);
+  }
   // const searchingBy = req.query.term 위에 거랑 동일하다
   res.render("search", { pageTitle: "Search", searchingBy, videosDb });
 };
