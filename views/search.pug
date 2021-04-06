@@ -4,17 +4,16 @@ include mixins/videoBlock
 block content
     .search__header
         h3 Searching for : #{searchingBy}
-    .search__videos
-        if videosDb.length === 0   
-            h5 No Videos Found 
+    .search__videos     
         each video in videosDb 
             +videoBlock({
-                id : video.id,
                 title:video.title,
                 views:video.views,
-                videoFile:video.fileUrl,
-                comments : video.commnets,
+                videoFile:video.videoFile,
             })
 
 
 
+// 서치 기능은 아직 구현 하지 않음
+// 단순 화면 표시
+            
